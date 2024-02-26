@@ -1,14 +1,17 @@
-import requests, json, re, os
+#使用方法
+#添加环境变量 ikuuuEMAIL 值为邮箱
+#添加环境变量 ikuuuPASSWD 值为密码
 
+import requests, json, re, os
 session = requests.session()
 # 配置用户名（一般是邮箱）
 email = os.environ.get('ikuuuEMAIL')
 # 配置用户名对应的密码 和上面的email对应上
 passwd = os.environ.get('ikuuuPASSWD')
 
-login_url = 'https://ikuuu.me/auth/login'
-check_url = 'https://ikuuu.me/user/checkin'
-info_url = 'https://ikuuu.me/user/profile'
+login_url = 'https://ikuuu.pw/auth/login'
+check_url = 'https://ikuuu.pw/user/checkin'
+info_url = 'https://ikuuu.pw/user/profile'
 
 header = {
         'origin': 'https://ikuuu.art',
