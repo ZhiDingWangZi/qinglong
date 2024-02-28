@@ -1,6 +1,6 @@
 """
-new Env("微信小程序-华住签到")
-cron 0 7 * * *
+new Env("华住会")
+cron 22 5 0 * * *
 环境变量名称 huazhu_cookies
 """
 
@@ -13,7 +13,7 @@ import ApiRequest
 import mytool
 from notify import send
 
-title = '微信小程序-华住签到'
+title = '华住会'
 tokenName = 'huazhu_cookies'
 
 
