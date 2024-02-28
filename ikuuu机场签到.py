@@ -1,3 +1,9 @@
+"""
+new Env("ikuuu机场")
+cron 22 5 0 * * *
+环境变量名称 huazhu_cookies
+"""
+
 #使用方法
 #添加环境变量 ikuuuEMAIL 值为邮箱
 #添加环境变量 ikuuuPASSWD 值为密码
