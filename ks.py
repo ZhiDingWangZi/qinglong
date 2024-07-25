@@ -12,7 +12,7 @@ work_path = os.path.dirname(os.path.abspath(__file__))
 SIGN_LOG_FILE = os.path.join(work_path, SIGN_LOG)
 
 # 这里填写你的 cookie
-
+a_token = "a_token"
 
 
 def get_baoxiang(token):
