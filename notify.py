@@ -33,8 +33,6 @@ def print(text, *args, **kw):
 # 通知服务
 # fmt: off
 push_config = {
-    'HITOKOTO': False,                  # 启用一言（随机句子）
-
     'BARK_PUSH': '',                    # bark IP 或设备码，例：https://api.day.app/DxHcxxxxxRxxxxxxcm/
     'BARK_ARCHIVE': '',                 # bark 推送是否存档
     'BARK_GROUP': '',                   # bark 推送分组
@@ -665,16 +663,6 @@ def pushme(title: str, content: str) -> None:
         print(f"PushMe 推送失败！{response.status_code} {response.text}")
 
 
-def one() -> str:
-    """
-    获取一条一言。
-    :return:
-    """
-    url = "https://v1.hitokoto.cn/"
-    res = requests.get(url).json()
-    return res["hitokoto"] + "    ----" + res["from"]
-
-
 if push_config.get("BARK_PUSH"):
     notify_function.append(bark)
 if push_config.get("CONSOLE"):
@@ -734,11 +722,6 @@ def send(title: str, content: str) -> None:
         if title in re.split("\n", skipTitle):
             print(f"{title} 在SKIP_PUSH_TITLE环境变量内，跳过推送！")
             return
-
-    hitokoto = push_config.get("HITOKOTO")
-
-    text = one() if hitokoto else ""
-    content += "\n\n" + text
 
     ts = [
         threading.Thread(target=mode, args=(title, content), name=mode.__name__)
