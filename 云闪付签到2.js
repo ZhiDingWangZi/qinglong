@@ -1,5 +1,5 @@
 /*
-cron: 10 0 0 * * *
+cron: 0 10 0 * * *
 云闪付签到
 说明：抓包域名https://youhui.95516.com/newsign/api/daily_sign_in
 参数Authorization和Cookie分别对应变量名YSF_TOKEN和YSF_COOKIE
