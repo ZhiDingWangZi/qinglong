@@ -15,9 +15,9 @@ email = os.environ.get('ikuuuEMAIL')
 # 配置用户名对应的密码 和上面的email对应上
 passwd = os.environ.get('ikuuuPASSWD')
 
-login_url = 'https://ikuuu.pw/auth/login'
-check_url = 'https://ikuuu.pw/user/checkin'
-info_url = 'https://ikuuu.pw/user/profile'
+login_url = 'https://ikuuu.one/auth/login'
+check_url = 'https://ikuuu.one/user/checkin'
+info_url = 'https://ikuuu.one/user/profile'
 
 header = {
         'origin': 'https://ikuuu.art',
