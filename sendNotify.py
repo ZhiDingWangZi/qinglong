@@ -33,7 +33,7 @@ DD_BOT_SECRET = ''          # 钉钉机器人的DD_BOT_SECRET; secrets可填
 QQ_SKEY = ''                # qq机器人的QQ_SKEY; secrets可填
 QQ_MODE = ''                # qq机器人的QQ_MODE; secrets可填
 QYWX_AM = ''                # 企业微信
-PUSH_PLUS_TOKEN = '5c95b037b1df48b796460b1637bd636b'        # 微信推送Plus+
+PUSH_PLUS_TOKEN = ''        # 微信推送Plus+
 
 notify_mode = []
 
