@@ -15,12 +15,12 @@ email = os.environ.get('ikuuuEMAIL')
 # 配置用户名对应的密码 和上面的email对应上
 passwd = os.environ.get('ikuuuPASSWD')
 
-login_url = 'https://ikuuu.ch/auth/login'
-check_url = 'https://ikuuu.ch/user/checkin'
-info_url = 'https://ikuuu.ch/user/profile'
+login_url = 'https://ikuuu.org/auth/login'
+check_url = 'https://ikuuu.org/user/checkin'
+info_url = 'https://ikuuu.org/user/profile'
 
 header = {
-        'origin': 'https://ikuuu.ch',
+        'origin': 'https://ikuuu.org',
         'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'
 }
 data = {
